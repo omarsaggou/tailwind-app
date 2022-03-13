@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title{
+    @apply pl-3 pt-2 font-bold text-lg text-purple-200
+}
+
+.content-text{
+    @apply px-3 py-5 prose max-w-none text-purple-200
+}
+
+.card{
+    @apply bg-indigo-700
+}
