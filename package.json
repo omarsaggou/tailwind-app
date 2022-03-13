@@ -3,6 +3,9 @@
     "tailwindcss": "^3.0.23"
   },
   "scripts": {
-    "build-css":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0"
   }
 }
