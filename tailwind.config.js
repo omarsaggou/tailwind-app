@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      colors: {
+        primary: "#040D21",
+      },
       animation: {
         blob: "blob 7s infinite",
       },
@@ -24,6 +27,10 @@ module.exports = {
           },
         },
       },
+      height: (theme) => ({
+        400: "400px",
+        100: "100px",
+      }),
     },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
