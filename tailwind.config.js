@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#040D21",
+        secondary: "#02DFBF",
       },
       animation: {
         blob: "blob 7s infinite",
@@ -28,7 +29,7 @@ module.exports = {
         },
       },
       height: (theme) => ({
-        400: "400px",
+        500: "500px",
         100: "100px",
       }),
     },

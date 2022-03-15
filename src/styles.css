@@ -25,8 +25,40 @@ canvas {
   max-width: 100%;
   max-height: 100%;
 }
-canvas * {
-  background-color: red !important;
-  background-image: none !important;
-  background: none !important;
+
+.home {
+  background-image: url("Desktop\ -\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.line::after {
+  display: inline-block;
+  content: "";
+  border-bottom: 3px solid #02dfbf;
+  width: 4rem;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-1rem);
+}
+
+.custom-shape-divider-bottom-1647365408 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1647365408 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 63px;
+}
+
+.custom-shape-divider-bottom-1647365408 .shape-fill {
+  fill: #ffffff;
 }

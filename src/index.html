@@ -9,38 +9,113 @@
 
 </head>
 <body>
-<div class="grid md:grid-cols-2 home bg-primary py-20 px-20  text-white">
-  
-  
-  <div>
-    
-      <p class="uppercase tracking-loose w-full">What business are you?</p>
-      <h1 class="my-4 text-5xl font-bold leading-tight">
-        Main Hero Message to sell yourself!
-      </h1>
-      <p class="leading-normal text-2xl mb-8">
-        Sub-hero message, not too long and not too short. Make it just right!
-      </p>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        Subscribe
-      </button>
-    
 
-  </div>
-  <div class="canvas w-full  h-400 md:h-400">
-    <canvas id="globe" ></canvas>
-  
-  </div>
-  
-  
+
+<!-- ---------- snap grid -------------------- -->
+<div class="grid snap-y snap-mandatory w-screen h-screen overflow-scroll overscroll-none">
+
+
+
+  <!-- ------------ home page ------------------------- -->
+  <div class="snap-start grid w-screen h-screen home  pt-5  ">
+
+    
+  <div class="leading-tight pl-5  md:pl-40">
+    <img src="logo-footer.png" class="w-20" alt="logo">   
 </div>
 
+    <div class="grid md:grid-cols-2 pt-5 pb-5  pl-5   md:pt-28 md:pb-20 pr-0 md:pl-40 text-white">
+  
+  
+      <div>
+        
+          <p class="uppercase tracking-loose w-full text-gray-300">What business are you?</p>
+          <h1 class="my-4 text-5xl font-bold leading-tight">
+            Main Hero Message to sell <span class="text-secondary line"> yourself!  </span> 
+          </h1>
+          <p class="leading-normal text-2xl mb-8 text-gray-300">
+            Sub-hero message, not too long and not too short. Make it just right!
+          </p>
+          <div class="items-center justify-start mt-4 lg:flex lg:gap-2">
+            <input type="text" placeholder="Your actio here..."
+              class="
+              flex-grow
+                block
+                px-8
+                py-2
+                mt-6
+                text-lg
+                font-medium
+                text-left text-white
+                bg-transparent
+                border
+                border-secondary
+                rounded
+                md:mt-0
+              "
+              href="#"
+              />
+            
+            <button
+              class="
+                block
+                px-8
+                py-2
+                mt-6
+                text-lg
+                font-medium
+                text-center text-primary
+                rounded
+                bg-secondary
+                border
+                border-secondary
+                md:mt-0
+              "
+              >Envoyer</button
+            >
+          </div>
+        
+    
+      </div>
+      <div class="canvas w-full  h-1/2">
+        <!-- <canvas id="globe" ></canvas> -->
+      
+      </div>
+      
+      
+    </div>
+<div class="relative" >
+  <div class="custom-shape-divider-bottom-1647365408">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
 
-
+</div>
+  </div>
 <script src="./main.js"></script>
+  <!-- ------------ home page ------------------------- -->
 
 
 
+
+<!-- ------------------------------ time line page --------------------- -->
+
+
+<div class="snap-start seconde   w-screen h-screen bg-white flex items-center justify-center text-3xl" >
+
+
+ 
+    
+</div>
+<div class="snap-start bg-amber-100  w-screen h-screen flex items-center justify-center text-3xl" >two</div>
+
+
+
+
+
+
+<!-- ------------------------------ time line page --------------------- -->
 
 
 
@@ -48,7 +123,7 @@
 
 
   <!-- ----------------------------------------------- footer ---------------------------------------- -->
-    <div class="grid footer overflow-hidden" >
+    <div class="snap-start grid  w-screen h-screen footer overflow-hidden" >
       <div class="relative w-full max-w-lg hidden md:block">
         <div class="absolute -top-20 -left-32 w-72 h-72 bg-pink-600 opacity-30  rounded-full mix-blend-multiply  shadow-2xl shadow-pink-300  filter blur-xl  animate-blob "></div>
               </div>
@@ -138,7 +213,7 @@
             </div>
          
             <div class="col-span-1">
-                <h3 class="w-full my-2 text-xl font-bold leading-tight  text-white">
+                <h3 class="w-full mt-9 md:mt-0 md:my-2 text-xl font-bold leading-tight  text-white">
                     Contact Us
                   </h3>   
                   <div >
@@ -169,5 +244,14 @@
 
 
     </div>
+
+
+
+
+
+
+
+  </div>
+    <!-- -------------------------- snap grid end ------------------------------------- -->
 </body>
 </html>
