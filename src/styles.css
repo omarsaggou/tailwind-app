@@ -41,6 +41,25 @@ canvas {
   left: 0;
   transform: translateY(-1rem);
 }
+.loose-line::after {
+  display: inline-block;
+  content: "";
+  border-bottom: 3px solid #02dfbf;
+  width: 4rem;
+  bottom: 0;
+  left: 0;
+  margin-left: 3px;
+}
+.loose-line-before::after,
+.loose-line-before::before {
+  display: inline-block;
+  content: "";
+  border-bottom: 3px solid #02dfbf;
+  width: 4rem;
+  bottom: 0;
+  left: 0;
+  margin-left: 3px;
+}
 
 .custom-shape-divider-bottom-1647365408 {
   position: absolute;
@@ -61,4 +80,25 @@ canvas {
 
 .custom-shape-divider-bottom-1647365408 .shape-fill {
   fill: #ffffff;
+}
+
+#animate-me {
+  animation: animationname 4s infinite;
+  animation-duration: 3s;
+}
+@keyframes animationname {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#packet {
+  overflow: hidden;
+}
+
+.card {
+  background: linear-gradient(33deg, #040d21 0%, #052861 100%);
 }

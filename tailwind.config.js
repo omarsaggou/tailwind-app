@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         primary: "#040D21",
         secondary: "#02DFBF",
+        third: "#431F49",
       },
       animation: {
         blob: "blob 7s infinite",
