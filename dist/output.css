@@ -715,6 +715,10 @@ select {
   overflow: hidden;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -723,6 +727,11 @@ select {
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -742,6 +751,16 @@ select {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pt-2 {
@@ -904,6 +923,10 @@ select {
 
   .md\:p-12 {
     padding: 3rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 }
 
