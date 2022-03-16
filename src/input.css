@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.input-style{
+  @apply
+  px-3 py-2
+  md:ml-2
+  self-stretch
+  flex-1/2 border
+  border-gray-300 rounded-lg shadow-sm focus:outline-none
+  focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500;
+}
+.btn{
+    @apply
+    md:mb-0 mb-3
+    md:w-32 w-56
+    rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider text-indigo-400 bg-white
+    hover:text-white hover:bg-indigo-400 hover:ring-1 hover:ring-white hover:shadow-lg transition ease-out duration-500
+    md:transform md:hover:scale-110
+    flex-shrink-0;
+}
