@@ -31,7 +31,12 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
 }
-l l .line::after {
+.cta {
+  background-image: url("cta-back.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.line::after {
   display: inline-block;
   content: "";
   border-bottom: 3px solid #02dfbf;
