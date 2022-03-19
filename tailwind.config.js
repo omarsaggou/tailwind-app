@@ -18,6 +18,9 @@ module.exports = {
         primary: "#040D21",
         secondary: "#02DFBF",
         third: "#431F49",
+        mybg: "#052862",
+        from_cl: "#040d21",
+        to_cl: "#052861",
       },
       animation: {
         blob: "blob 7s infinite",

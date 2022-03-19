@@ -100,3 +100,23 @@
     background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
   }
 }
+
+.card-coa {
+  @apply bg-gradient-to-r from-from_cl to-to_cl
+  flex md:flex-row flex-col gap-2 md:p-24 p-8;
+}
+
+.btn {
+  @apply self-center
+    w-auto h-9
+    rounded-lg px-3 uppercase text-xs cursor-pointer tracking-wider text-white bg-green-600
+    hover:text-green-600 hover:bg-white hover:shadow-lg transition ease-out duration-500
+    md:transform md:hover:scale-110
+    flex-shrink-0;
+}
+
+.ttl-coa-style {
+  @apply w-auto px-10
+  md:-mr-6 mr-0 -ml-4 -mb-4
+  md:text-6xl text-3xl font-bold md:py-6 py-1 font-mono;
+}
