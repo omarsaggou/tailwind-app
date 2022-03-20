@@ -2,104 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.input-style {
-  @apply px-3 py-2
-  md:ml-2
-  self-stretch
-  flex-1/2 border
-  border-gray-300 rounded-lg shadow-sm focus:outline-none
-  focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500;
-}
-.btn {
-  @apply md:mb-0 mb-3 md:mr-2
-    md:w-32 w-56
-    rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider text-indigo-400 bg-white
-    hover:text-white hover:bg-indigo-400 hover:ring-1 hover:ring-white hover:shadow-lg transition ease-out duration-500
-    md:transform md:hover:scale-110
-    flex-shrink-0;
-}
-
-.ping {
-  -webkit-animation: ping 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms
-    infinite;
-  animation: ping 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms infinite;
-}
-
-@-webkit-keyframes ping {
-  0% {
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
-    opacity: 0.8;
-  }
-  80% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(2.2);
-    transform: scale(2.2);
-    opacity: 0;
-  }
-}
-@keyframes ping {
-  0% {
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
-    opacity: 0.8;
-  }
-  80% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(2.2);
-    transform: scale(2.2);
-    opacity: 0;
-  }
-}
-
-.border-dashed-down {
-  background: linear-gradient(90deg, #d9dee8 50%, transparent 50%),
-    linear-gradient(90deg, #d9dee8 50%, transparent 50%),
-    linear-gradient(0deg, #d9dee8 50%, transparent 50%),
-    linear-gradient(0deg, #d9dee8 50%, transparent 50%);
-  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-  background-size: 0px 0px, 0px 0px, 4px 16px, 0px 0px;
-  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
-  border-radius: 5px;
-  padding: 10px;
-  animation: dash-down 25s linear infinite;
-}
-
-.border-dashed-top-right-bottom {
-  background: linear-gradient(90deg, #d9dee8 50%, transparent 50%),
-    linear-gradient(90deg, #d9dee8 50%, transparent 50%),
-    linear-gradient(0deg, #d9dee8 50%, transparent 50%),
-    linear-gradient(0deg, #d9dee8 50%, transparent 50%);
-  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-  background-size: 16px 4px, 16px 4px, 0px 0px, 4px 16px;
-  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
-  border-radius: 5px;
-  border-bottom-left-radius: 20px;
-  padding: 10px;
-  animation: dash-top-right 25s linear infinite;
-}
-
-@keyframes dash-down {
-  from {
-    background-position: 0% 0%;
-  }
-  to {
-    background-position: 0% 100%;
-  }
-}
-@keyframes dash-top-right {
-  to {
-    background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
-  }
-}
+/* -------------------- font ------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* -------------------- font ------------------------- */
 
 .card-coa {
   @apply bg-gradient-to-r from-from_cl to-to_cl
@@ -120,3 +25,29 @@
   md:-mr-6 mr-0 -ml-4 -mb-4
   md:text-6xl text-3xl font-bold md:py-6 py-1 font-mono;
 }
+
+.number-stat {
+  @apply text-3xl flex flex-col justify-center items-center font-bold text-to_cl;
+}
+
+.square-animation {
+  @apply border-secondary;
+}
+
+/* ----------------------------- text size ---------------------- */
+.litleText {
+  @apply text-sm md:text-lg;
+}
+.bigText {
+  @apply text-3xl md:text-5xl;
+}
+.subTitle {
+  @apply text-lg md:text-2xl;
+}
+.title {
+  @apply text-xl md:text-3xl;
+}
+.paragraphe {
+  @apply text-sm;
+}
+/* ----------------------------- text size ---------------------- */
